@@ -1,0 +1,21 @@
+:root {
+  /* Colors */
+  --primary-color: #1a1a2e;
+  --secondary-color: #16213e;
+  --accent-color: #0f3460;
+  --text-color: #eaeaea;
+  --text-light: #ffffff;
+  --primary-background: #1a1a2e;
+
+  /* Fonts */
+  --primary-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --nav-font-size: 1.1rem;
+
+  /* Spacing */
+  --small-spacing: 0.5rem;
+  --medium-spacing: 1rem;
+  --large-spacing: 2rem;
+
+  /* Line Height */
+  --line-height: 1.6;
+}
