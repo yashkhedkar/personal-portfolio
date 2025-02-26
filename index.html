@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yash Khedkar - Full Stack Developer</title>
+    <!-- Add Favicon -->
+    <link rel="icon" href="image.png" type="image/x-icon">
+    <title>Yash Khedkar</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -19,172 +22,365 @@
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li> 
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                 <!-- Dark/Light Mode Switch -->
+            <div class="theme-switch-container">
+                <label class="theme-switch">
+                    <input type="checkbox" id="theme-switch">
+                    <span class="slider round"></span>
+                </label>
+            </div>
             </div>
         </nav>
     </header>
 
     <main>
+        <!-- Scroll-to-Top Button -->
+        <button id="scrollToTopBtn" title="Go to top">↑</button>
         <!-- Home Section -->
-<section id="home" class="hero-section">
-  <div class="hero-container">
-      <div class="hero-content">
-          <h1 class="hero-heading">Yash Khedkar</h1>
-          <p class="hero-subtitle">Full Stack Developer | MERN Stack | Fresher</p>
-          <div class="cta-buttons">
-              <button class="cta-btn" id="viewProjectsBtn">View Projects</button>
-              <button class="cta-btn download" id="downloadResumeBtn">Download Resume</button>
-          </div>
-      </div>
-      <div class="hero-image-container">
-          <img src="yash.jpg" 
-               srcset="hero-image-small.jpg 480w, 
-                       hero-image-medium.jpg 768w, 
-                       hero-image-large.jpg 1024w"
-               alt="Yash Khedkar - Full Stack Developer" 
-               class="hero-image">
-      </div>
-  </div>
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-heading">Yash Khedkar</h1>
+                    <p class="hero-subtitle">Full Stack Developer | MERN Stack </p>
+                    <div class="cta-buttons">
+                        <button class="cta-btn" id="viewProjectsBtn">View Projects</button>
+                        <button class="cta-btn download" id="downloadResumeBtn">Download Resume</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="about-container">
+                <h2 class="section-title" style="">About Me</h2>
+                <!-- Text on the Left -->
+                <div class="about-text">
+                    <h2 class="section-title">Hi, I'm Yash!</h2>
+                    <p class="about-description">
+                        A passionate Full Stack Web Developer and AI enthusiast. I specialize in building scalable applications using React, Node.js, and MongoDB, with a focus on performance and efficiency.
+                    </p>
+                    <p class="about-description">
+                        I enjoy architecting robust solutions, enhancing user experiences, and staying ahead of the latest tech trends. Beyond coding, I appreciate diving into research, experimenting with new tools, and refining my craft.
+                    </p>
+                </div>
+        
+                <!-- Image on the Right -->
+                <div class="about-image">
+                    <img src="yash.jpg" alt="Yash Khedkar" class="profile-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+<section id="skills" class="skills-section">
+    <div class="skills-container">
+        <h2 class="section-title" style="text-align: center;">Skills</h2>
+        <div class="skills-grid">
+            <!-- Skill Card 1: HTML -->
+            <div class="skill-card">
+                <img src="images/html.png" alt="HTML" class="skill-image">
+                <h3 class="skill-name">HTML</h3>
+            </div>
+
+            <!-- Skill Card 2: CSS -->
+            <div class="skill-card">
+                <img src="images/css.png" alt="CSS" class="skill-image">
+                <h3 class="skill-name">CSS</h3>
+            </div>
+
+            <!-- Skill Card 3: JavaScript -->
+            <div class="skill-card">
+                <img src="images/javascript.png" alt="JavaScript" class="skill-image">
+                <h3 class="skill-name">JavaScript</h3>
+            </div>
+            <!-- Skill Card 3: JavaScript -->
+            <div class="skill-card">
+                <img src="images/bootstrap.png" alt="JavaScript" class="skill-image">
+                <h3 class="skill-name">bootstrap</h3>
+            </div>
+            
+
+            <!-- Skill Card 4: React -->
+            <div class="skill-card">
+                <img src="images/react.png" alt="React" class="skill-image">
+                <h3 class="skill-name">React</h3>
+            </div>
+
+            <!-- Skill Card 5: Node.js -->
+            <div class="skill-card">
+                <img src="images/nodejs.png" alt="Node.js" class="skill-image">
+                <h3 class="skill-name">Node.js</h3>
+            </div>
+
+            <div class="skill-card">
+                <img src="images/ExpressJs.png" alt="MongoDB" class="skill-image">
+                <h3 class="skill-name">ExpressJs</h3>
+            </div>
+
+            <!-- Skill Card 6: MongoDB -->
+            <div class="skill-card">
+                <img src="images/mongodb.png" alt="MongoDB" class="skill-image">
+                <h3 class="skill-name">MongoDB</h3>
+            </div>
+            <!-- Skill Card 6: MongoDB -->
+            <div class="skill-card">
+                <img src="images/postgressql.png" alt="MongoDB" class="skill-image">
+                <h3 class="skill-name">postgressql</h3>
+            </div>
+            <!-- Skill Card 6: MongoDB -->
+            
+            <!-- Skill Card 6: MongoDB -->
+            <div class="skill-card">
+                <img src="images/c++.png" alt="MongoDB" class="skill-image">
+                <h3 class="skill-name">C++</h3>
+            </div>
+        </div>
+    </div>
 </section>
 
-        <!-- About Me Section -->
-<section id="about" class="about-section">
-  <div class="about-container">
-      <div class="about-content">
-          <h2 class="section-title">About Me</h2>
-          <div class="intro-text">
-              <p class="overview">
-                  I'm a skilled software developer with experience in <strong>HTML, CSS, JavaScript</strong>, and expertise in frameworks like <strong>React, Bootstrap, Node.js, and MongoDB</strong>. I'm a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!
-              </p>
-          </div>
-          <div class="roles">
-              <h3>Roles</h3>
-              <ul class="role-list">
-                  <li class="role-item">Web Developer</li>
-                  <li class="role-item">Frontend Developer</li>
-                  <li class="role-item">Backend Developer</li>
-                  <li class="role-item">UI/UX Designer</li>
-              </ul>
-          </div>
-      </div>
-      <div class="skills-section">
-          <h3>Skills</h3>
-          <ul class="skills-list">
-              <li class="skill-item">HTML5</li>
-              <li class="skill-item">CSS3</li>
-              <li class="skill-item">JavaScript</li>
-              <li class="skill-item">React</li>
-              <li class="skill-item">Bootstrap</li>
-              <li class="skill-item">Node.js</li>
-              <li class="skill-item">MongoDB</li>
-          </ul>
-      </div>
-  </div>
-</section>
 
+        <!-- Proficiency Section -->
+        <section id="proficiency" class="proficiency-section">
+            <div class="proficiency-container">
+                <h2 class="section-title">Proficiency</h2>
+                <div class="proficiency-grid">
+                    <!-- Frontend/Design -->
+                    <div class="proficiency-card">
+                        <h3>Frontend/Design</h3>
+                        <div class="skill-rating">
+                            <div class="skill">
+                                <span>HTML5</span>
+                                <div class="rating-bar">
+                                    <div class="rating-fill" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>CSS3</span>
+                                <div class="rating-bar">
+                                    <div class="rating-fill" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>JavaScript</span>
+                                <div class="rating-bar">
+                                    <div class="rating-fill" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>React</span>
+                                <div class="rating-bar">
+                                    <div class="rating-fill" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>Bootstrap</span>
+                                <div class="rating-bar">
+                                    <div class="rating-fill" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="proficiency-card">
+                        <h3>Backend</h3>
+                        <div class="skill-rating">
+                            <div class="skill">
+                                <span>Node.js</span>
+                                <div class="rating-bar">
+                                    <div class="rating-fill" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>Express.js</span>
+                                <div class="rating-bar">
+                                    <div class="rating-fill" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>MongoDB</span>
+                                <div class="rating-bar">
+                                    <div class="rating-fill" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>REST APIs</span>
+                                <div class="rating-bar">
+                                    <div class="rating-fill" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>Authentication</span>
+                                <div class="rating-bar">
+                                    <div class="rating-fill" style="width: 65%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Programming -->
+                    <div class="proficiency-card">
+                        <h3>Programming</h3>
+                        <div class="skill-rating">
+                            <div class="skill">
+                                <span>JavaScript</span>
+                                <div class="rating-bar">
+                                    <div class="rating-fill" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>C++</span>
+                                <div class="rating-bar">
+                                    <div class="rating-fill" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>DSA</span>
+                                <div class="rating-bar">
+                                    <div class="rating-fill" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>Python</span>
+                                <div class="rating-bar">
+                                    <div class="rating-fill" style="width: 65%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- Projects Section -->
         <!-- Projects Section -->
 <section id="projects" class="projects-section">
-  <h2 class="section-title">My Projects</h2>
-  <div class="projects-grid">
-      <!-- Project Card 1 -->
-      <div class="project-card">
-          <img src="project1.jpg" alt="Project One" class="project-image">
-          <div class="project-content">
-              <h3 class="project-title">College Predictor</h3>
-              <p class="project-description">A brief description of your first project goes here.</p>
-              <a href="https://github.com/yashkhedkar/College_Predictor_Project.git" class="project-link">View Project</a>
-          </div>
-      </div>
+    <h2 class="section-title">My Projects</h2>
+    <div class="projects-grid">
+        <!-- Project Card 1: College Predictor -->
+        <div class="project-card">
+            <img src="Images/college_predictor.jpg" alt="College Predictor" class="project-image">
+            <div class="project-content">
+                <h3 class="project-title">College Predictor</h3>
+                <p class="project-description">
+                    A web application that predicts colleges based on user input. Built using <strong>React, Node.js, and MongoDB</strong>, this project helps students find the best colleges matching their preferences and academic performance.
+                </p>
+                <a href="https://github.com/yashkhedkar/College_Predictor_Project.git" class="project-link" target="_blank">View Project</a>
+            </div>
+        </div>
 
-      <!-- Project Card 2 -->
-      <div class="project-card">
-          <img src="image2.png" alt="Project Two" class="project-image">
-          <div class="project-content">
-              <h3 class="project-title">Fertilzer Prediction</h3>
-              <p class="project-description">A brief description of your second project goes here.</p>
-              <a href="https://github.com/yashkhedkar/AgriNexus.git" class="project-link">View Project</a>
-          </div>
-      </div>
+        <!-- Project Card 2: AgriNexus -->
+        <div class="project-card">
+            <img src="Images/agrinexus.png" alt="AgriNexus" class="project-image">
+            <div class="project-content">
+                <h3 class="project-title">AgriNexus</h3>
+                <p class="project-description">
+                    AgriNexus is a platform designed to empower farmers with data-driven insights. Built using <strong>Python, Flask, and Machine Learning</strong>, it provides crop recommendations, weather forecasts, and market trends to optimize agricultural productivity.
+                </p>
+                <a href="https://github.com/yashkhedkar/AgriNexus.git" class="project-link" target="_blank">View Project</a>
+            </div>
+        </div>
 
-      <!-- Project Card 3 -->
-      <div class="project-card">
-          <img src="project3.jpg" alt="Project Three" class="project-image">
-          <div class="project-content">
-              <h3 class="project-title">Rental Application</h3>
-              <p class="project-description">A brief description of your third project goes here.</p>
-              <a href="#" class="project-link">View Project</a>
-          </div>
-      </div>
-  </div>
+        <!-- Project Card 3: Rental Application -->
+        <div class="project-card">
+            <img src="Images/Rental_Application.png" alt="Rental Application" class="project-image">
+            <div class="project-content">
+                <h3 class="project-title">Rental Application</h3>
+                <p class="project-description">
+                    A web application for managing rental properties. Built using <strong>React, Node.js, and MongoDB</strong>, it allows users to list, search, and book rental properties with ease. The platform includes features like user authentication, property filtering, and booking management.
+                </p>
+                <a href="https://github.com/yashkhedkar/Rental-WebApplication.git" class="project-link" target="_blank">View Project</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- View More Button -->
+    <div class="view-more-container">
+        <a href="https://github.com/yashkhedkar" class="view-more-btn">View More</a>
+    </div>
 </section>
 
         <!-- Contact Section -->
 <section id="contact" class="contact-section">
-  <div class="contact-container">
-      <div class="contact-form">
-          <h2 class="section-title">Get In Touch</h2>
-          <p class="contact-subtitle">Contact</p>
-          <form id="contact-form">
-              <div class="form-group">
-                  <label for="name">Your Name</label>
-                  <input type="text" id="name" name="name" required placeholder="What's your good name?">
-              </div>
-              <div class="form-group">
-                  <label for="email">Your Email</label>
-                  <input type="email" id="email" name="email" required placeholder="What's your web address?">
-              </div>
-              <div class="form-group">
-                  <label for="message">Your Message</label>
-                  <textarea id="message" name="message" required placeholder="What you want to say?"></textarea>
-              </div>
-              <button type="submit" class="submit-btn">Send Message</button>
-          </form>
-      </div>
-      <div class="contact-image">
-          <img src="3d-contact-image.png" alt="3D Contact Image" class="3d-image">
-      </div>
-  </div>
+    <div class="contact-container">
+        <div class="contact-form">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-subtitle">Contact</p>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required placeholder="What's your good name?">
+                    <span class="error-message" id="name-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required placeholder="What's your web address?">
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" required placeholder="What you want to say?"></textarea>
+                    <span class="error-message" id="message-error"></span>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+                <div id="form-status"></div>
+            </form>
+        </div>
+    </div>
 </section>
     </main>
+    
 
     <!-- Footer Section -->
-<footer class="footer">
-  <div class="footer-container">
-      <div class="footer-section about">
-          <h3>About</h3>
-          <p>Yash Khedkar</p>
-          <p>Web Developer & Designer</p>
-      </div>
-      <div class="footer-section links">
-          <h3>Quick Links</h3>
-          <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-          </ul>
-      </div>
-      <div class="footer-section social">
-          <h3>Connect With Me</h3>
-          <div class="social-links">
-              <a href="https://github.com/yashkhedkar" aria-label="GitHub"><i class="fab fa-github"></i></a>
-              <a href="https://www.linkedin.com/in/yash-khedkar-85436b258/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-              <a href="https://x.com/YashKhe32919444" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-              <a href="https://www.instagram.com/yash_khedkar_04" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          </div>
-      </div>
-  </div>
-  <div class="footer-bottom">
-      <p>&copy; <span id="currentYear"></span> Yash Khedkar. All rights reserved.</p>
-  </div>
-</footer>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>About</h3>
+                <p>Yash Khedkar</p>
+                <p>Web Developer & Designer</p>
+            </div>
+
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section social">
+                <h3>Connect With Me</h3>
+                <div class="social-links">
+                    <a href="https://github.com/yashkhedkar" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/yash-khedkar-85436b258/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://x.com/YashKhe32919444" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/yash_khedkar_04" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> Yash Khedkar. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="js/script.js"></script>
     <script>
         // Update the year dynamically
         document.getElementById('2025').textContent = new Date().getFullYear();
+
+        // Handle form submission
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Add your form submission logic here
+            alert('Form submitted!');
+        });
     </script>
 </body>
 </html>

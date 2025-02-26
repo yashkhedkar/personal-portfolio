@@ -1,0 +1,157 @@
+/* About Me Section */
+
+
+.about-section {
+    padding: 4rem 2rem;
+    background-color: var(--primary-background);
+    color: var(--text-light);
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 400px;
+    text-align: center;
+}
+
+.profile-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.about-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-light);
+}
+
+.about-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+.about-description strong {
+    color: var(--accent-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        max-width: 100%;
+    }
+
+    .profile-image {
+        max-width: 250px;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .about-description {
+        font-size: 1rem;
+    }
+}
+
+
+.skills-section {
+    padding: 4rem 2rem;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+.skills-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.skill-card {
+    background-color: var(--secondary-color);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(8, 6, 6, 0.3);
+}
+
+.skill-image {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.skill-name {
+    font-size: 1.25rem;
+    color: var(--text-light);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+
+    .about-image {
+        max-width: 100%;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .skill-card {
+        padding: 1rem;
+    }
+
+    .skill-image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .skill-name {
+        font-size: 1rem;
+    }
+}
